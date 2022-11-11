@@ -485,6 +485,7 @@ img {
 
 .logo-web {
 }
+
 .logo-studio {
     color: var(--bgn-color);
 }
@@ -508,8 +509,7 @@ img {
 
 .map-link:hover,
 .map-link:focus {
-    color: var(--activation-color);
-    
+    color: var(--activation-color);  
 }
 
 .contacts {
@@ -544,37 +544,43 @@ img {
     display: flex;
     justify-content: center;
     align-items: baseline;
-    gap: 10px;
-    
+    gap: 10px;   
 }
+
 .follow-section-item {
     width:calc((100%-30px)/4);
     height: 44px;
     width: 44px;
 }
+
 .follow-section-link {
     width: 100%;
     height: 100%;
     border-radius: 50%;
 
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
+
     background-color: rgba(255, 255, 255, 0.1);
-    transition: background-color 250ms var(--cubic); 
-    
+    transition: background-color 250ms var(--cubic);   
 }
+
 .follow-section-link:hover,
 .follow-section-link:focus {
     background-color:var(--activation-color) ;
-   
 }
+
 .follow-svg {
     fill: var(--bgn-color);
 }
 
+.subscribe-section {
+
+}
+
 .subscribe-form {
-    margin-left: auto;  
+    margin-left: 93px;  
 }
 
 .subscribe-label {
@@ -599,6 +605,7 @@ img {
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    color: var(--bgn-color);
 
     transition: border-color 250ms var(--cubic); 
 }
@@ -722,7 +729,6 @@ img {
 .portfolio-top-wrap {
     position: relative;
     overflow: hidden;
-
 }
 
 .portfolio-top-text {
@@ -824,12 +830,12 @@ img {
     align-items: center;
     justify-content: center;
     cursor: pointer;  
-    transition: background-color 250ms var(--cubic), fill 250ms var(--cubic);  
+    transition: fill 250ms var(--cubic);  
 }
 
-.modal-close:hover {
-    fill: var(--bgn-color);
-    background-color: var(--activation-color);
+.modal-close:hover,
+.modal-close:focus {
+    fill: var(--activation-color);
 }
 
 .backdrop.is-hidden {
@@ -845,7 +851,7 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--black-color);
-    margin-bottom: 30px;
+    margin-bottom: 12px;
 }
 
 .modal-form {
@@ -855,6 +861,8 @@ img {
 .modal-input {
     width: 100%;
     height: 40px;
+
+    font-size: 16px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -877,16 +885,19 @@ img {
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: var(--text-color);
-}
 
-.modal-input-label span {
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
 }
 
 .input-wrap {
     position: relative;
     margin-bottom: 28px;
+}
+
+.modal-input-label .modal-input-label-text {
+    display: block;
+    margin-bottom: 4px;
 }
 
 .modal-input-svg {
@@ -899,12 +910,18 @@ img {
     transition: fill 250ms var(--cubic);
 }
 
+
+.comment-wrap {
+    margin-bottom: 25px;
+}
+
+
 .modal-user-comment {
     width: 100%;
     height: 120px;
 
+    display: block;
     padding: 12px 16px;
-    margin-bottom: 20px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -927,8 +944,23 @@ img {
     color: rgba(117, 117, 117, 0.5);
 }
 
+
+.modal-comment-label span {
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: var(--text-color);
+
+    display: block;
+    margin-bottom: 4px;
+
+}
+
 .modal-checkbox {
     margin-right: 13px;
+    margin-bottom: 30px;
 }
 
 .modal-input-privacy {
@@ -946,8 +978,6 @@ img {
 
     display: flex;
     align-items: center;
-
-    margin-bottom: 30px;
     margin-left: 13px;
 }
 

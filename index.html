@@ -348,31 +348,32 @@
                     </a></li>
                 </ul>  
             </div>
-            <form class="subscribe-form">
-                <label for="subscribe" class="subscribe-label">
-                    Підпишіться на розсилку
-                </label>
-                <div class="subscribe-form-wrap">
-                    <input 
-                    type="email" 
-                    name="subscribe" 
-                    id="subscribe" 
-                    class="input-subscribe" 
-                    placeholder="E-mail"
-                    required
-                    >
-                    <button 
-                    type="submit" 
-                    class="subscribe-form-button">
-                        Підписатися
-                        <svg class="subscribe-svg" width="24" height="24">
-                            <use href="./images/symbol-defs.svg#subscribe"></use>
-                        </svg>
-                    </button>
-                </div>
-            </form>
-        </div>
-                   
+            <div class="subscribe-section">
+                <form class="subscribe-form">
+                    <label for="subscribe" class="subscribe-label">
+                        <span>Підпишіться на розсилку</span>
+                    </label>
+                    <div class="subscribe-form-wrap">
+                        <input 
+                        type="email" 
+                        name="subscribe" 
+                        id="subscribe" 
+                        class="input-subscribe" 
+                        placeholder="E-mail"
+                        required
+                        >
+                        <button 
+                        type="submit" 
+                        class="subscribe-form-button">
+                            Підписатися
+                            <svg class="subscribe-svg" width="24" height="24">
+                                <use href="./images/symbol-defs.svg#subscribe"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>                  
     </footer> 
     
     
@@ -387,7 +388,7 @@
             <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
             <form class="modal-form">
                 <label class="modal-input-label"
-                    ><span>Ім'я</span>
+                    ><span  class="modal-input-label-text">Ім'я</span>
                     <span class="input-wrap">
                     <input 
                     type="text" 
@@ -401,7 +402,7 @@
                     </span>
                 </label>
                 <label class="modal-input-label"
-                    ><span>Телефон</span>
+                    ><span class="modal-input-label-text">Телефон</span>
                     <span class="input-wrap">
                     <input 
                     type="tel" 
@@ -415,7 +416,7 @@
                     </span>
                 </label>
                 <label class="modal-input-label"
-                    ><span>Пошта</span>
+                    ><span class="modal-input-label-text">Пошта</span>
                     <span class="input-wrap">
                     <input 
                     type="email" 
@@ -428,8 +429,8 @@
                     </svg>
                     </span>
                 </label>
-                <div>
-                    <label for="user-comment" class="modal-input-label"
+                <div class="comment-wrap">
+                    <label for="user-comment" class="modal-comment-label"
                     ><span>Коментар</span>
                     </label>
                     <textarea 
