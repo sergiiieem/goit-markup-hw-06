@@ -584,7 +584,7 @@ img {
 }
 
 .subscribe-label {
-    display: flex;
+    display: inline-block;
     margin-bottom: 20px;
     
     font-weight: 700;
